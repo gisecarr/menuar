@@ -2,8 +2,8 @@
 docker/data
 logs/
 ###> symfony/framework-bundle ###
-symfony/.env
-symfony/public/bundles/
-symfony/var/
-symfony/vendor/
+menuar/.env
+menuar/public/bundles/
+menuar/var/
+vendor/
 ###< symfony/framework-bundle ###
