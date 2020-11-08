@@ -18,7 +18,22 @@ class UserDashboardController extends AbstractController
      */
     public function getDashboard()
     {
-        return new Response("hello");
+        return $this->render("dashboard/comidas.html.twig");
     }
 
+    /**
+     * @Route("/dashboard/comidas", name="app_dashboard_comidas")
+     */
+    public function getItemsList()
+    {
+        return $this->render("dashboard/comidas.html.twig");
+    }
+
+    /**
+     * @Route("/dashboard/info", name="app_dashboard_info")
+     */
+    public function getRestaurantIfo()
+    {
+        return $this->render("dashboard/informacion.html.twig");
+    }
 }
