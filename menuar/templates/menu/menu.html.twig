@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+ <main role="main">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">La Nova viola</h1>
+            <p> Platos hechos con Amor desde el 2007 </p>
+            <p> WhatsApp: 123456 </p>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Content here -->
+        {% include 'menu/menuList.html.twig' with {menuItems} %}
+    </div>
+ </main>
+
+{% endblock %}

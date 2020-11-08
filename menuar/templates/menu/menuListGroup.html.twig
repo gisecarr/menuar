@@ -1,0 +1,10 @@
+
+<div class="container">
+    {% for item in value %}
+            <div class="row">
+                <div class="col-sm">
+                    {% include 'menu/menuItem.html.twig' with {item} %}
+                </div>
+            </div>
+    {% endfor %}
+</div>
